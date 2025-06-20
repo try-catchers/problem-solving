@@ -1,0 +1,45 @@
+name: 💡 주차별 문제 선정
+description: 이번 주에 풀 문제를 선정합니다.
+title: "[n주차] 알고리즘"
+assignees:
+  - j1suk1m
+  - cloudmato
+  - Hanjise0ng
+body:
+  - type: input
+    id: type
+    attributes:
+      label: 📌 알고리즘
+      description: 이번 주의 알고리즘 유형을 입력하세요.
+      placeholder: 예) 구현
+    validations:
+      required: true
+
+  - type: textarea
+    id: medium-problems
+    attributes:
+      label: ✅ 난이도 중 문제 2개
+      description: 백준 실버 또는 프로그래머스 레벨 2 정도의 문제를 입력하세요.
+      placeholder: |
+        1. [문제 제목](문제 링크) 
+        2. [문제 제목](문제 링크)
+    validations:
+      required: true
+
+  - type: textarea
+    id: hard-problem
+    attributes:
+      label: 🔥 난이도 상 문제 1개
+      description: 백준 골드 또는 프로그래머스 레벨 3 정도의 문제를 입력하세요.
+      placeholder: |
+        - [문제 제목](문제 링크)
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ### 📢 안내
+        📝 모든 팀원은 본 이슈를 참고하여 각자 문제 풀이 후 PR을 생성해주세요. 
+        📂 개인 디렉토리 → [n주차] 알고리즘 → 문제별 마크다운 파일을 작성해주세요.
+        🪵 브랜치는 `week{주차}/#{이슈 번호}/{이름}` 형식으로 생성해주세요.
